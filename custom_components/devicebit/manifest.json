@@ -1,0 +1,8 @@
+{
+    "domain": "devicebit",
+    "name": "Devicebit",
+    "documentation": "",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": ["@yangbo1979"]
+  }
