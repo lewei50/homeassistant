@@ -111,7 +111,7 @@ class WTH3080(Devicebit):
     }, extra=vol.REMOVE_EXTRA)
 	#Temperature,Humidity
     __sensor_map = {
-        'Temperature':             (0, '℃'),
+        'Temperature':             (0, '°C'),
         'Humidity':                (1, '%'),
 
     }
@@ -156,7 +156,7 @@ class YNM3000(Devicebit):
     }, extra=vol.REMOVE_EXTRA)
 	#Temperature,Humidity
     __sensor_map = {
-        'Temperature':			(0, '℃'),
+        'Temperature':			(0, '°C'),
         'Humidity':				(1, '%'),
 		'PM25':					(2, 'ug/m3'),
 		'AQI':					(3, ''),
