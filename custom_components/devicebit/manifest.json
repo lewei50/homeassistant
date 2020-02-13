@@ -6,7 +6,7 @@
     "@lewei50"
   ],
   "requirements": [
-    "devicebit==0.1.7"
+    "devicebit==0.1.8"
   ],
   "dependencies": []
 }
