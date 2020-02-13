@@ -54,10 +54,9 @@ Sensors available in the library:
 
 | name               | Unit | Description                                           |
 |--------------------|------|:-----------------------------------------------------------------------------|
-| wth3080_temperature   | °C    | Temperature.                                     |
-| wth3080_humidity      |  %    | Humidity.                                        |
-| wth3080_pm25   | ug/m3 | PM25.                                     |
-| wth3080_aqi     |       | AQI.                                        |
-| wth3080_hcho   | mg/m3 | HCHO.                                     |
-| wth3080_co2      |  ppm  | CO2.                                        |
-
+| ynm3000_temperature   | °C    | Temperature.                                     |
+| ynm3000_humidity      |  %    | Humidity.                                        |
+| ynm3000_pm25   | ug/m3 | PM25.                                     |
+| ynm3000_aqi     |       | AQI.                                        |
+| ynm3000_hcho   | mg/m3 | HCHO.                                     |
+| ynm3000_co2      |  ppm  | CO2.                                        |
