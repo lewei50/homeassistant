@@ -1,28 +1,63 @@
-# HomeAssistant
-home assistant custom components
-The HT&AirMonitor integration connects to home-assistant. HT&AirMonitor may be connected to a home Wi-Fi network and expose a REST API.
+---
+title: "devicebit"
+description: "Instructions on how to integrate DEVICEBIT sensor within Home Assistant."
+logo: devicebit-logo.png
+ha_category:
+  - Sensor
+  - Environment
+  - Climate
+ha_release: 0.104
+ha_iot_class: Local Polling
+---
 
-Configuration
+`devicebit` provides real-time reading of Temperature & Humidity monitoring (WTH3080, WTH8266) and air monitor (WPM8266,YNM3000) products from [DEVICEBIT](http://www.lwkits.com/) over Wi-Fi.
 
-To use the sensors in your installation, add the following to your configuration.yaml file:
+## Configuration
 
-# Example configuration.yaml entry
+To use this sensor in your installation, add the following to your `configuration.yaml` file:
+
 ```yaml
 # Example configuration.yaml entry
 sensor:
   - platform: devicebit
-    host: IP_ADDRESS
-    name: your device name
+    host: IP_ADDRESS_OF_HOST
+    name: DEVICE_NAME
+```
 
-CONFIGURATION VARIABLES
+{% configuration %}
+host:
+  description: The IP address of your devicebit.
+  required: true
+  type: string
+port:
+  description: port of your devicebit
+  required: false
+  default: 80
+  type: integer
+name:
+  description: Name for the sensor entity in Home Assistant.
+  required: true
+  type: string
+{% endconfiguration %}
 
-host
-(string)(Required)
-The IP address of your HT&AirMonitor system.
+## Sensors
 
-name
-(string)(Required)
+Sensors available in the library: 
+ - Temperature & Humidity monitoring products(WTH3080, WTH8266).
 
+| name               | Unit | Description                                           |
+|--------------------|------|:-----------------------------------------------------------------------------|
+| wth3080_temperature   | °C    | Temperature.                                     |
+| wth3080_humidity      |  %    | Humidity.                                        |
 
-model
-(string)(Optional): WTH8266/WTH3080/YNM3000
+ - Air Monitor products (WPM8266,YNM3000).
+
+| name               | Unit | Description                                           |
+|--------------------|------|:-----------------------------------------------------------------------------|
+| wth3080_temperature   | °C    | Temperature.                                     |
+| wth3080_humidity      |  %    | Humidity.                                        |
+| wth3080_pm25   | ug/m3 | PM25.                                     |
+| wth3080_aqi     |       | AQI.                                        |
+| wth3080_hcho   | mg/m3 | HCHO.                                     |
+| wth3080_co2      |  ppm  | CO2.                                        |
+
