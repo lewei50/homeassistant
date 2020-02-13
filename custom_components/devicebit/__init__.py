@@ -1,1 +1,1 @@
-"""do nothing"""
+"""Support for devicebit Devices."""

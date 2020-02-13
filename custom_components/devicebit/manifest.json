@@ -1,8 +1,12 @@
 {
-    "domain": "devicebit",
-    "name": "Devicebit",
-    "documentation": "",
-    "requirements": [],
-    "dependencies": [],
-    "codeowners": ["@yangbo1979"]
-  }
+  "domain": "devicebit",
+  "name": "Devicebit",
+  "documentation": "https://www.home-assistant.io/integrations/devicebit",
+  "codeowners": [
+    "@lewei50"
+  ],
+  "requirements": [
+    "devicebit==0.1.7"
+  ],
+  "dependencies": []
+}
